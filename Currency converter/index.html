@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let GBP = 0.73;
+        let CAD = 1.26;
+        let CNY = 6.46;
+        let GHS = 6.05;
+
+ const Converter = (amount) => {
+  let USD = (amount / GHS);
+  let gbp = (USD * GBP);
+  let cad = (USD * CAD);
+  let cyn = (USD * CNY);
+  let ghs = amount;
+
+  return { USD, gbp, cad, cyn, ghs };
+};
+
+console.log(Converter(1000));
+    </script>
+</body>
+</html>
